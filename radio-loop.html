@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body onLoad="animate()">
+</html>
+
+<script type="text/javascript">
+
+
+var size = 500;
+var current = 0;
+var speed = 1;
+lay(size)
+
+function lay(num) {
+	var gt = unescape("%3e"); // == ">"
+	document.write("<form name='animation'" + gt);
+	for (i=0; i<num; ++i) {
+		if (i % 50 == 0) {
+			document.write("<br" + gt);
+		}
+		document.write("<input type='radio' name='lamps'" + gt);
+	}
+	document.write("</form" + gt);
+}
+
+function animate() {
+	document.animation.lamps[current].click();//Math.floor(Math.random() * size)].click();
+	//current = (current == document.animation.lamps.length - 1) ? 0 : ++current;
+	if (current == document.animation.lamps.length - 1) { 
+		current = 0;
+	} else {
+		current++;
+	}
+	timerID = setTimeout("animate()", speed);
+}
+
+animate()
+</script>

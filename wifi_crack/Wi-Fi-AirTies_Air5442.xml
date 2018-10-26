@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+	<name>AirTies_Air5442</name>
+	<SSIDConfig>
+		<SSID>
+			<hex>416972546965735F41697235343432</hex>
+			<name>AirTies_Air5442</name>
+		</SSID>
+	</SSIDConfig>
+	<connectionType>ESS</connectionType>
+	<connectionMode>auto</connectionMode>
+	<MSM>
+		<security>
+			<authEncryption>
+				<authentication>WPA2PSK</authentication>
+				<encryption>AES</encryption>
+				<useOneX>false</useOneX>
+			</authEncryption>
+			<sharedKey>
+				<keyType>passPhrase</keyType>
+				<protected>true</protected>
+				<keyMaterial>01000000D08C9DDF0115D1118C7A00C04FC297EB0100000062A86FF10090B840B7A4B954CA47802200000000020000000000106600000001000020000000BE2038A71E388805652F728685BA8ABF31E8DF1C7CC27487177B78C9B4C0B63E000000000E8000000002000020000000C02998E971681D21BAF2FE4F753A605E65B68687D03ED01785AD8DE854D03BAF1000000029F96A5895CB9B43900FE45D583F173F400000005BCE46DAEA115A96B170C86D82D4953ABED97275CAAAA7D6655EC10B05C6042353806A0ECFA7D619F2DC0A9EC6E9111965B00163BE3056DEE88B3B29F6F2397A</keyMaterial>
+			</sharedKey>
+		</security>
+	</MSM>
+	<MacRandomization xmlns="http://www.microsoft.com/networking/WLAN/profile/v3">
+		<enableRandomization>false</enableRandomization>
+		<randomizationSeed>495904031</randomizationSeed>
+	</MacRandomization>
+</WLANProfile>

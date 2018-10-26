@@ -1,0 +1,37 @@
+<!DOCTYPE html>	
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<h2 align="center">Read-O-matic</h2>
+<div id="one">
+	<textarea rows="25" cols="100"></textarea>
+</div>
+<div id="two">
+	<button class="btn btn-primary" style="margin: 0 0 0 240px;">Calculate</button>
+	<h1></h1>
+</div>
+<style type="text/css">
+	div {
+		float: left;
+	}
+	#one {
+		margin:0 25px;
+	}
+	#two {
+		margin: 0 0 0 15px;
+		margin-top: 25px;
+	}
+</style>
+<script type="text/javascript">
+	// (40 words in 16 secs)
+	document.getElementsByTagName("button")[0].addEventListener("click", function(){
+		let text = document.getElementsByTagName("textarea")[0].value.split(" ").length * (16/40);
+		let output = document.getElementsByTagName("h1")[0];
+		// output.innerHTML = Math.round(text) + " seconds you need to spend <br>" + Math.round(text / 60) + " minutes you need to spend <br>";
+		output.innerHTML = Math.round(text / 60) + " minutes you need to spend<br>";
+		if ( Math.round(text / 3600) == 1) {
+			output.innerHTML = output.innerHTML + Math.round(text / 3600) + " hour you need to spend <br>";
+		} else if ( Math.round(text / 3600) > 1) {
+			output.innerHTML = output.innerHTML + Math.round(text / 3600) + " hours you need to spend <br>";
+		}
+	});
+</script>

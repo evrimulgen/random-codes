@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+	<name>Mirkan</name>
+	<SSIDConfig>
+		<SSID>
+			<hex>4D69726B616E</hex>
+			<name>Mirkan</name>
+		</SSID>
+	</SSIDConfig>
+	<connectionType>ESS</connectionType>
+	<connectionMode>auto</connectionMode>
+	<MSM>
+		<security>
+			<authEncryption>
+				<authentication>WPA2PSK</authentication>
+				<encryption>AES</encryption>
+				<useOneX>false</useOneX>
+			</authEncryption>
+			<sharedKey>
+				<keyType>passPhrase</keyType>
+				<protected>true</protected>
+				<keyMaterial>01000000D08C9DDF0115D1118C7A00C04FC297EB0100000062A86FF10090B840B7A4B954CA47802200000000020000000000106600000001000020000000969188CD4C9C2F431308549EA81960AF77BAC4217ABA07A8372CAB1DF14EF282000000000E8000000002000020000000AA1CC40F6529D60BE949CBB9BDEDAA0DD5C4BF5053F177043581C58DE96EE92110000000C786032AD1BA3AF68BF0582F1893110440000000D62A1A0BFCBDCADDC9B76CE3B8512D2B886D9CDB3D99A62C6C45F3C9991E8D462F6A1563A24989DB9ED3FD83324F87A5EDA7EE9FAAB13CE3D657481796D3BD68</keyMaterial>
+			</sharedKey>
+		</security>
+	</MSM>
+	<MacRandomization xmlns="http://www.microsoft.com/networking/WLAN/profile/v3">
+		<enableRandomization>false</enableRandomization>
+		<randomizationSeed>3393182956</randomizationSeed>
+	</MacRandomization>
+</WLANProfile>

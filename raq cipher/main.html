@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chiper</title>
+</head>
+<body>
+<div align="middle" style="margin-top: 15%">
+	<input type="text" id="to_change" value="SERR CVMMN!">
+	<input type="button" value="encrypt / decrypt" onclick="encrypt(document.getElementById('to_change').value)">
+	<!-- <input type="button" value="decrypt" onclick="decrypt(document.getElementById('to_change').value)"> -->
+	<p id="chipped"></p>
+</div>
+</body>
+</html>
+
+<script type="text/javascript">
+
+function encrypt(str) {
+  var input = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+  var output = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+  var a = "";
+  var b = "";
+  //str = document.getElementById("to_change").innerHTML;
+  for (i=0; i<str.length; i++) {
+    for (j=0; j<input.length; j++) {
+      if (input[j] == str[i]) {
+        b = b.concat(output[j]);
+      } else if (j == input.length-1 && b[i] == undefined) {
+        b = b.concat(str[i]);
+      }
+    }
+  }
+  return document.getElementById("chipped").innerHTML = b;
+}
+
+// function decrypt(str) {
+//   var input = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+//   var output = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+//   var a = "";
+//   var b = "";
+//   //str = document.getElementById("to_change").innerHTML;
+//   for (i=0; i<str.length; i++) {
+//     for (j=0; j<output.length; j++) {
+//       if (output[j] == str[i]) {
+//         b = b.concat(input[j]);
+//       } else if (j == output.length-1 && b[i] == undefined) {
+//         b = b.concat(str[i]);
+//       }
+//     }
+//   }
+//   return document.getElementById("chipped").innerHTML = b;
+// }
+</script>

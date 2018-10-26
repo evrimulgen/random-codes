@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+	<name>liselim</name>
+	<SSIDConfig>
+		<SSID>
+			<hex>6C6973656C696D</hex>
+			<name>liselim</name>
+		</SSID>
+	</SSIDConfig>
+	<connectionType>ESS</connectionType>
+	<connectionMode>manual</connectionMode>
+	<MSM>
+		<security>
+			<authEncryption>
+				<authentication>WPA2PSK</authentication>
+				<encryption>AES</encryption>
+				<useOneX>false</useOneX>
+			</authEncryption>
+			<sharedKey>
+				<keyType>passPhrase</keyType>
+				<protected>true</protected>
+				<keyMaterial>01000000D08C9DDF0115D1118C7A00C04FC297EB0100000062A86FF10090B840B7A4B954CA47802200000000020000000000106600000001000020000000EF87815A910C656961C017A0B765D279314E886002CCDDCFD1FC96036EFAE3F5000000000E80000000020000200000005B4782FE559ED2A14B47E7A8D817B07BD0F37629EA6F858AA4F2B0467D3C465A20000000F46C86CB2FAE7DF96C55E273F7B0CE7EF14902A1E269C642EB772634F7B6F18A4000000066A0F5F528AE8FC1CDCCCEC5FD800B7C7EE2B69631503BAFA8A7C96D7761B31BB318A2FEF28B2943D2D6F6E3003E3FED327CF149D7F35904E757B68845D4D3D1</keyMaterial>
+			</sharedKey>
+		</security>
+	</MSM>
+	<MacRandomization xmlns="http://www.microsoft.com/networking/WLAN/profile/v3">
+		<enableRandomization>false</enableRandomization>
+	</MacRandomization>
+</WLANProfile>

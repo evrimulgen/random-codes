@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+	<name>AndroidAPee</name>
+	<SSIDConfig>
+		<SSID>
+			<hex>416E64726F696441506565</hex>
+			<name>AndroidAPee</name>
+		</SSID>
+	</SSIDConfig>
+	<connectionType>ESS</connectionType>
+	<connectionMode>auto</connectionMode>
+	<MSM>
+		<security>
+			<authEncryption>
+				<authentication>WPA2PSK</authentication>
+				<encryption>AES</encryption>
+				<useOneX>false</useOneX>
+			</authEncryption>
+			<sharedKey>
+				<keyType>passPhrase</keyType>
+				<protected>true</protected>
+				<keyMaterial>01000000D08C9DDF0115D1118C7A00C04FC297EB0100000062A86FF10090B840B7A4B954CA47802200000000020000000000106600000001000020000000FCA3A02FC7BA813E96FE283D35FBDDC8FED8C8A682113086D765EE1F30BDA82F000000000E8000000002000020000000FAE2D9F2654CE1D0D420CCA06CAD7AE6F4C655C6FC4B4FD87DE12ECD4D60D953100000002CFCB5EAA47E89CC82A0C898D64F72104000000055005DF3E2FFE66B3CF21280A1D9D2D8B875BC4F145DCB2497CE004F48836CD17C52267DA62F87E1D48B3F33136CF31DE2D86C26A0801204FEEFF2F19A8495A2</keyMaterial>
+			</sharedKey>
+		</security>
+	</MSM>
+	<MacRandomization xmlns="http://www.microsoft.com/networking/WLAN/profile/v3">
+		<enableRandomization>false</enableRandomization>
+		<randomizationSeed>2675896534</randomizationSeed>
+	</MacRandomization>
+</WLANProfile>

@@ -1,0 +1,36 @@
+{"nodes": [
+    { "name": "mirkan"},
+    { "name": "renas"},
+    { "name": "kilic"},
+    { "name": "renan"},
+    { "name": "beran "},
+    { "name": "kilic"},
+    { "name": "Omer"},
+    { "name": "Zehra"},
+    { "name": "Mentor"},
+    { "name": "Ar sawdāˀ"},
+    { "name": "Yunus"},
+    { "name": "Dolphin"}],
+"links": [{
+        "source": 0,
+        "target": 1
+    },{
+        "source": 0,
+        "target": 2
+    },{
+        "source": 3,
+        "target": 4
+    },{
+        "source": 3,
+        "target": 5
+    },{
+        "source": 6,
+        "target": 7
+    },{
+        "source": 6,
+        "target": 8
+    },{
+        "source": 10,
+        "target": 11
+    }]
+}

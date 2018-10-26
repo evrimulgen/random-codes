@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+	<name>AndroidPupi</name>
+	<SSIDConfig>
+		<SSID>
+			<hex>416E64726F696450757069</hex>
+			<name>AndroidPupi</name>
+		</SSID>
+	</SSIDConfig>
+	<connectionType>ESS</connectionType>
+	<connectionMode>manual</connectionMode>
+	<MSM>
+		<security>
+			<authEncryption>
+				<authentication>WPA2PSK</authentication>
+				<encryption>AES</encryption>
+				<useOneX>false</useOneX>
+			</authEncryption>
+			<sharedKey>
+				<keyType>passPhrase</keyType>
+				<protected>true</protected>
+				<keyMaterial>01000000D08C9DDF0115D1118C7A00C04FC297EB0100000062A86FF10090B840B7A4B954CA4780220000000002000000000010660000000100002000000017A02BEA13FDFAB8874357DFDA7DC975AB0CFF06A53103907CD2E0C0C4411017000000000E800000000200002000000083C63F88A6230DF4553E7B1F5E947DED753BF73C0EF4A6F74E6CBF2D918CC15C10000000BCEFAEA0DE6C3E6DD6FC9D1FF483F08240000000FE8F3EA9D45BD92FD6EDB9842F8FF2A2408A8B9869E4BC3C81747ED6A5A3A17FFA148024816ECDD6C102634CDB4D14BAD637424F72B59BEE59D011BBCCC685C5</keyMaterial>
+			</sharedKey>
+		</security>
+	</MSM>
+	<MacRandomization xmlns="http://www.microsoft.com/networking/WLAN/profile/v3">
+		<enableRandomization>false</enableRandomization>
+		<randomizationSeed>3715462293</randomizationSeed>
+	</MacRandomization>
+</WLANProfile>

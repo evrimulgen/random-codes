@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+	<name>TTNET_TP-LINK_8388</name>
+	<SSIDConfig>
+		<SSID>
+			<hex>54544E45545F54502D4C494E4B5F38333838</hex>
+			<name>TTNET_TP-LINK_8388</name>
+		</SSID>
+	</SSIDConfig>
+	<connectionType>ESS</connectionType>
+	<connectionMode>auto</connectionMode>
+	<MSM>
+		<security>
+			<authEncryption>
+				<authentication>WPA2PSK</authentication>
+				<encryption>AES</encryption>
+				<useOneX>false</useOneX>
+			</authEncryption>
+			<sharedKey>
+				<keyType>passPhrase</keyType>
+				<protected>true</protected>
+				<keyMaterial>01000000D08C9DDF0115D1118C7A00C04FC297EB0100000062A86FF10090B840B7A4B954CA47802200000000020000000000106600000001000020000000515D99E2565B391EA63EEBB34FE71587598739D27399507A7BCB02CBBDF92AA4000000000E8000000002000020000000263B424A7EB5D7930283100C7BF7E0D484086D35A07FBD4E96E0A35AC1A8A28A1000000007DA1308470DC5B3F9700D9E9BBC043D400000004E7C5CC75167DF8E65436E46BD44F841944DB0372FD9F1EFA58EB9A566CA0E09D926EC7C921BA3851ADEC106B45DE021145DF3633369FE057D8466E1CF24CB96</keyMaterial>
+			</sharedKey>
+		</security>
+	</MSM>
+	<MacRandomization xmlns="http://www.microsoft.com/networking/WLAN/profile/v3">
+		<enableRandomization>false</enableRandomization>
+		<randomizationSeed>2583084681</randomizationSeed>
+	</MacRandomization>
+</WLANProfile>

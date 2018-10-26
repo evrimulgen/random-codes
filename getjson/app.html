@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+
+$.getJSON("test.json", function(json) {
+	console.log(json);
+});
+
+//require('fs').writeFile("test.json", JSON.stringify({'beranos': "linux"}), "utf8", callback);
+
+var txtFile = "./test.json";
+var file = new File(txtFile);
+
+file.open("a"); // open file with write access
+file.writeln("{'beranos': 'linux'}");
+//file.write(str);
+file.close();
+
+</script>

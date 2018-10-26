@@ -1,0 +1,113 @@
+// Import a library to help a component
+import React from 'react';
+import { Text, AppRegistry, View, Button, TouchableOpacity } from 'react-native';
+
+// Create a component
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      itemCount: 0
+    };
+    this.addItem = this.addItem.bind(this);
+    this.DecItem = this.DecItem.bind(this);
+    this.Reset = this.Reset.bind(this);
+  }
+  addItem() {
+    this.setState({
+      itemCount: this.state.itemCount + 1
+    });
+  };
+
+  DecItem() {
+    this.setState({
+      itemCount: this.state.itemCount - 1
+    });
+  };
+
+  Reset() {
+    this.setState({
+      itemCount: 0
+    });
+  };
+
+  render() {
+    return (
+      <View>
+        <Button title="Increase" onPress={this.addItem}></Button>
+        <Button title="Decrease" onPress={this.DecItem}></Button>
+        <Button title="Reset" onPress={this.Reset}></Button>
+        <Text>{this.state.itemCount}</Text>
+      </View>
+    );
+  }
+};
+
+
+// Render it to the device
+// ReactNative.AppRegistry.registerComponent('albums', () => App);
+AppRegistry.registerComponent('rncourse', () => MyComponent);
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+// Import a library to help a component
+import React from 'react';
+import { StyleSheet, Text, AppRegistry, View, Button, TouchableOpacity, TextInput } from 'react-native';
+
+// Create a component
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      visibility: 0
+    };
+    this.toggleVisibility = this.toggleVisibility.bind(this);
+  }
+
+  toggleVisibility() {
+    this.setState({
+      visibility: !this.state.visibility
+    });
+  };
+  
+  render() {
+    if (this.state.visibility) {
+      return (
+        <View style={styles.container}>
+          <Button title="Don't Click Me" onPress={this.toggleVisibility}></Button>
+          <Text style={styles.white}>Now you see me!</Text>
+          <TextInput />
+        </View>
+      );
+    } else {
+      return (
+        <View style={styles.container}>
+          <Button title="Click Me" onPress={this.toggleVisibility}></Button>
+          <TextInput />
+        </View>
+      );
+    }
+  }
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#123',
+    position: 'relative',
+    //alignItems: 'center',
+    justifyContent: 'center',
+  },
+  white: {
+    color: '#fff',
+    textAlign: 'center',
+    justifyContent: 'center',
+    // margin: '5% 0 0 0',
+  },
+})
+
+// Render it to the device
+// ReactNative.AppRegistry.registerComponent('albums', () => App);
+AppRegistry.registerComponent('rncourse', () => MyComponent);
+
