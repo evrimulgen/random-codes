@@ -1,0 +1,43 @@
+html{
+	background: #D0403B
+}
+
+body{
+	margin: -16px 150px 0 150px;
+	height: 1000px;
+	background: #fff;
+	opacity: 0.9;
+    filter: alpha(opacity=50);
+}
+
+.write{
+	padding: 0 20px
+}
+
+.write p{
+	font-family: Tohoma;
+	float: left;
+}
+
+.contact {
+	border:4px dashed #000;border-radius: 5px; width: 100px; height: 50px; float: left; margin: 50px 250px; background: #4da6ff; text-align: center; 
+}
+
+.contact h1{
+	text-align: center; font: bold 13px Sofia; padding: 5px 0 0 0; color: #fff; text-decoration: none;
+}
+
+.contact h1:hover{
+	color: #fff; text-decoration: none; font: bold 15px Sofia;
+}
+
+.abc{
+	opacity: 0.5;
+    filter: alpha(opacity=50);
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #333;
+    margin-left: 500px;
+    top: 0; /* Position the navbar at the top of the page */
+}

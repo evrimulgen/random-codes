@@ -1,0 +1,285 @@
+/***** RESET *****/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    /*font-size: 100%;
+    vertical-align: baseline;*/
+    
+}
+html, body {height:100%;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;} /* tables still need 'cellspacing="0"' in the markup */
+textarea {overflow:auto;}
+/***** RESET *****/
+
+ @font-face { font-family: DINpro; src: url('DINPro-Regular_13937.ttf'); } 
+ @font-face { font-family: DINpro; font-weight: bold; src: url('DINPro-Regular_13937.ttf');}
+
+body{
+    background-image: url("images/bubble.png"); /*INSERT BACKGROUND IMAGE URL HERE /// COLOR HERE*/
+    background-repeat: repeat;
+}
+
+
+.page-header{
+    overflow: hidden;
+    /*background-color: #fff;*/
+    position: fixed;
+    /*opacity: 0.5;
+    filter: alpha(opacity=50);*/
+    top: 0;
+    width: 100%;
+    height: 150px;
+}
+
+.page-header a {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 50px 25px 0 0;
+    text-decoration: none;
+    color: #fff; text-decoration: none; font: bold 25px DINpro;
+    margin: 0 5px 0 20px;
+}
+
+
+
+.page-header a:hover {
+    color: #fff; 
+    text-decoration: underline; 
+    font: bold 25px DINpro;
+}
+
+.page-inside {
+    height: 60px;
+    font-size: 20px;
+    width: 250px;
+    float: left;
+    margin: 0 0 0 0;
+    /*background-color: #fff;*/
+}
+
+.page-inside h1{
+    
+}
+
+.logo{
+    background-image: url("images/samed.jpg"); /*INSERT LOGO URL HERE*/
+    background-repeat: repeat;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 50px 0 50px 50px;
+    background-color: #000;
+}
+
+.logo a{
+    width: 75px;
+    height: 50px;
+}
+
+.menu{
+    padding-top: 10px
+}
+
+.top{
+    margin: 300px auto 50px auto;
+    width: 80%;
+    height: auto;
+    background: #5dc;
+    border-radius: 4px;
+
+}
+
+.write{
+    /*padding: 10px 500px;*/
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    /*background: #fff;*/
+}
+
+.write hr{
+    float: left;
+    width: 100%;
+}
+
+.write p{
+    /*text-align: center; */
+    font: bold 15px DINpro; /*TO CHANGE PARAGRAPH'S THINGS*/
+    color: #fff;
+}
+
+.write h2{
+    /*text-align: center; */
+    font: bold 25px DINpro; /*TO CHANGE PARAGRAPH'S THINGS*/
+    color: #fff;
+}
+
+.write h1{
+    font: bold 30px DINpro;
+    color: #fff;
+    /*color: #54576A;*/
+    text-align: center; 
+}
+
+.write2{
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+
+}
+
+.middle{
+    width: 100%;
+    height: 500px;
+    background: #fff;
+}
+
+.tlg{
+    margin: 0 auto;
+    width: 500px;
+    height: 120px;
+    background-repeat: no-repeat;
+}
+
+.icon{
+    width: 100px;
+    height: 100px;
+    background-image: url("images/telegram.png");
+    background-size: 100px 100px;
+    float: left;
+}
+
+/*.icon a{
+    width: 150px;
+    height: 150px;
+}*/
+
+
+.join{
+    margin: 0 0 0 10px;
+    padding: 25px 0;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    float: left; 
+}
+
+.join a{
+    font: 25px DINpro;
+    color: #fff;
+    text-decoration: none;
+}
+
+.join a:hover{
+    font: 25px DINpro;
+    color: #fff;
+    text-decoration: underline;
+}
+/*
+.contact {
+    width: 150px;
+    height: 30px;
+    margin: 0 auto;
+    border: 2px solid #fff;
+    padding: 20px;
+    border-radius: 5px;
+    background: #4da6ff;
+    text-align: center;
+}
+
+.contact h1{
+    text-align: center; 
+    font: bold 25px DINpro; 
+    padding: 0 0 5px 0; 
+    color: #fff; 
+    text-decoration: underline;
+}
+
+.contact h1:hover{
+    color: #fff;
+    text-decoration: underline;
+    font: bold 26px DINpro;
+}
+*/
+
+.hepsi{
+    width: 760px; height: auto; margin: 10px auto 
+}
+.menu{
+    width: 400px; height: 50px;
+}
+.ust{
+    width: 760px; height: 150px; background:url(images/about.jpg) no-repeat; 
+}
+.ortasol{
+    width: 405px; height: 302px; float: left; font: 12px arial; color: #999; margin: 0 20px 0 0; padding: 20px 0 0 10px
+}
+.ortasag{
+    width: 325px; height: 322px; float: left; font: 12px arial; color: #999;
+}
+.altsol{
+    width: 435px; height: 98px; float: left; font: 12px arial; color: #ccc; border-top: 1px solid #ccc; padding:30px 0 0 0;
+}
+.altsag{
+    width: 325px; height: 98px; float: left; border-top: 1px solid #ccc; font: 11px arial; color: #ccc; padding:  30px 0 0 0;
+}
+.menu ul li{
+    float: left; 
+}
+.menu ul li a{
+    display: block; height: 50px; text-indent: -20000;  
+}
+.menu ul li#about a{
+    width: 71px; background:url(images/css-baliklama16.gif) 0 -100px no-repeat; margin: 0 0 0 11px
+}
+.menu ul li#serv a{
+    width: 84px; background:url(images/css-baliklama17.gif) no-repeat;
+}
+.menu ul li#port a{
+    width: 95px; background:url(images/css-baliklama18.gif) 0 0 no-repeat;
+}
+.menu ul li#cont a{
+    width: 95px; background:url(images/css-baliklama19.gif) 0 0 no-repeat;
+}
+.menu ul li#serv a:hover{
+    width: 84px; background:url(images/css-baliklama17.gif) 0 -100px no-repeat;
+}
+.menu ul li#port a:hover{
+    width: 95px; background:url(images/css-baliklama18.gif) 0 -100px no-repeat;
+}
+.menu ul li#cont a:hover{
+    width: 95px; background:url(images/css-baliklama19.gif) 0 -100px no-repeat;
+}
+.ustic{
+    width: 250px; height: 30px; padding: 60px 0 0 510px; font: 20px 'PT Sans'; color: #fff
+}
+.yazi1{
+    font: bold 23px 'PT Sans'; color: #fff
+}
+.yazi2{
+    font: bold 17px arial; color: #f60
+}
+.yazi3{
+    font: bold 17px arial; color: #888
+}
+.yazi4{
+    font: bold 21px arial; color: #c95e4e; text-transform:uppercase;
+}
+
+.altsag a{
+    font: 11px arial; color:#ccc; text-decoration: none
+}
+.altsag a:hover{
+    font: 11px arial; color:#d36818; text-decoration: underline
+}
+.yazi5{
+    color: orange
+}

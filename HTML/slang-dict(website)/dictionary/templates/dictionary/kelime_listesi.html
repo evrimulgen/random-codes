@@ -1,0 +1,22 @@
+{% extends 'dictionary/base.html' %}
+
+{% block content %}
+<div class="menu">
+			<ul>
+				<li><a href="">Ana Sayfa</a></li>
+				<li><a href="">En Çok Okunanlar</a></li>
+				<li><a href="">Kelime Öner</a></li>
+				<li><a href="{% url 'kelime_detail' pk=1 %}">Sie Go</a></li>
+			</ul>
+</div>
+{% for baslik in basliklar %}
+    <div class="post">
+    	<div class="date">
+        	{{ baslik.published_date }}
+    	</div>
+        <h1><a href="{% url 'kelime_detail' pk=baslik.pk %}">{{ baslik.kelime }}</a></h1>
+        <p>{{ baslik.anlami|linebreaksbr }}</p>
+
+    </div>
+{% endfor %}
+{% endblock %}

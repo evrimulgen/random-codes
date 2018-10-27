@@ -1,0 +1,342 @@
+DJANGO CREATE FROM SHELL
+
+	*************************************************************
+	*		   python manage.py migrate --run-syncdb			*
+	*************************************************************
+---------------------------------------------------------------------------------------------------------------------------------------------
+PYTHON CREATE FROM SHELL
+
+	from shorterner.models import KirrURL, Mirkan
+
+	KirrURL.objects.all()
+	new_obj = KirrURL()
+	new_obj.url = http://mirkan.com
+	new_obc.save()
+	*********************************
+	*		PYTHON TRICK:			*
+	*			import pdb			*
+	*			pdb.set_trace()		*
+	*********************************
+---------------------------------------------------------------------------------------------------------------------------------------------
+GIT KULLANIMI
+
+	git clone https://github.com/enisbt/invite-discord
+
+	git add .
+
+	git commit -m "commit mesajın"
+	
+	git remote -v
+	
+	git remote add elif https://github.com/lyk2018-python/elifin-okuzu.git
+
+	git push elif master
+
+	git stash #to resolve stash
+
+	python3 manage.py runserver http://142.93.167.4:400/ # to run spesific server
+
+	GIT TO SEE TREES:
+		gitk --all
+
+SERVERA GIT'DEN BIR SEYLER ATMAK ICIN
+
+	ssh mirkan@165.227.142.233
+
+	git clone https://github.com/enisbt/invite-discord
+
+	cd invite-discord
+
+	----YUKLENMESI GEREKEN IMPORTLARI YUKLE----
+	pip3 install -r requirements.txt (requirements.txt'nin oldugu klasorde)
+
+	sudo nano /etc/rc.local
+
+	-------------------------#!/bin/sh-e-----------------------------------------------------------------------------------------------------
+	-------------------------[YAZILABİLECEK ALAN]--------------------------------------------------------------------------------------------
+	-------------------------exit 0----------------------------------------------------------------------------------------------------------
+	[YAZILABİLECEK ALAN] = python3 /home/mirkan/invite-discord/bot/main.py &
+
+	rc.local main.py (calistiracan)
+
+	sudo systemctl reboot -
+
+HOW TO RUN C CODE ON TERMINAL
+
+	gcc (CODE_NAME).c 			# istek duyulursa -o (yeni_CODE_NAME)
+	./(CODE_NAME).out			# istek duyulursa ./ (yeni_CODE_NAME)
+
+TERMINALDEN DOSYALARIN YERLERINI DEGISTIRME
+
+	cd /var/www/html for index.html
+
+	sudo rm -rf lampp #to remove a directory
+
+	sudo mv [file] [directory] #to move a file
+
+SERVERA BISIYLER ATMAK ICIN
+ssh root@165.227.142.233
+ssh mirkan@165.227.142.233
+
+	cd /home/mirkan/invite-discord/bot/ && python3 main.py & 
+
+	usermod -aG sudo mirkan
+
+	mkdir deleterBot
+
+	cd deleterBot
+
+	sudo nano bot.py
+
+	(kodlari ctrl+c, ctrl+shift+v yap)
+
+	sudo nano /etc/rc.local
+
+	python3 /home/mirkan/deleterBot/bot.py &
+	exit 0
+
+	python3 /home/mirkan/invite-discord/bot/ main.py
+
+	(ctrl+x, Y, Y) yap
+
+	sudo systemctl reboot -
+
+	##############################################################################################################################
+
+	top 			= serverin calisma listesi aciliyor
+	reboot(systemctl reboot -i)	= serveri rebootlar
+
+	rm -f blabla.py		#dosya silmek icin
+
+-------------------------------------------------------------------------------------------------------------------------------
+Supreme_investments@protonmail.com
+Supreme_amazonws@protonmail.com
+
+şifreleri Supreme190899
+wsdub+3UDU4Y
+
+
+steemit
+P5JXM4oJrMKL9pkUv79jgp6QN6Uytcd2Nuc5y3zZdkwVB76UAyxe
+--------------------------------------------------------------------------------------------------------------------------------
+
+########JAVASCRIPT(node)#######################################PYTHON########################################################################
+
+	contac()                			========		append()
+
+	Math.floor(Math.random() * 10);     		========		random.randint(1,10)
+
+	testString.match("/and/gi").length; 		========		re.match("/and/", testString)
+
+	[4,5,6,7,8].reduce()
+
+	newArray = oldArray.concat(concatMe); 	========		newArray = oldArray + concatMe
+
+	.split();				========		.split()
+
+	.join();				========		.join()
+
+	
+	ES6 for loop:
+		numbers = [0,1,2,3,4,5];
+		for (const i of numbers) {console.log(i)}           === 			for (i=0; i<numbers.length; i++) {console.log(numbers[i])}
+
+	forEach:
+		['dog', 'cat', 'hen'].forEach(function(currentValue, index, array) {
+			console.log(currentValue, index, array)
+		})
+
+	Some usefull built-in funtions for arrays:
+		1. forEach() 2. includes() 3. filter() 4. map() 5. reduce() 6. some() 7. every() 8. sort() 9. Array.from() 10. Array.of()
+
+	ES16 if-else stations:
+		variablename = (condition) ? value1:value2			===				voteable = (age < 18) ? "Too young":"Old enough";
+
+	ES2017 Object functions:
+		cars = {BMW:156, Tesla:2, Toyota:10}
+		for (let [key, value] of Object.entries(cars)) {console.log(`key ${key} value ${value}`)} 		//  key BMW value 3, key tesla value 2, key toyota value 1
+		Object.values(cars);																			//	[ 3, 2, 1 ]
+		Object.keys(cars);																				//  [ 'BMW', 'tesla', 'toyota' ]
+		padStart(), padEnd():
+			const formatted = [0,1,12,123,1234,12345].map(num => num.toString().padStart(10, '0') 		//   adds 0 until len is 10, 
+			[   '0000000000', 
+				'0000000001', 
+				'0000000012', 
+				'0000000123', 
+				'0000001234', 
+				'0000012345'	]
+			Object.entries(cars).map(([name, inp]) => {console.log(name.padEnd(20, '-'), inp)})
+				BMW----------------- 156
+				Tesla--------------- 2
+				Toyota-------------- 10
+
+		Object.getOwnPropertyDescriptor(cars, "BMW")
+			{ value: 156,
+			  writable: true,
+			  enumerable: true,
+			  configurable: true }
+		async:
+			async function tripleAndAdd(a,b) { 
+				a = await tripleAfterOneSec(a); 
+				b = await tripleAfterOneSec(b);
+				return a+b;
+			}
+			function tripleAfterOneSec(param){ 
+				return new Promise (resolve => { 
+				setTimeout( resolve(param * 3), 1000 ) 
+			})}
+			tripleAfterOneSec(5).then(console.log)															//   15
+		async(2):
+			//Option 2 - *Catch* errors on  every await line
+			//as each await expression is a Promise in itself
+			async function doubleAndAdd(a, b) {
+				 a = await doubleAfter1Sec(a).catch(e => console.log('"a" is NaN')); // 👈
+				 b = await doubleAfter1Sec(b).catch(e => console.log('"b" is NaN')); // 👈
+				 if (!a || !b) {
+				  return NaN;
+				 }
+				 return a + b;
+				}
+
+			//🚀Usage:
+			doubleAndAdd('one', 2).then(console.log); // NaN  and logs:  "a" is NaN
+			doubleAndAdd(1, 2).then(console.log); // 6
+
+			function doubleAfter1Sec(param) {
+				 return new Promise((resolve, reject) => {
+				  setTimeout(function() {
+				   let val = param * 2;
+				   isNaN(val) ? reject(NaN) : resolve(val);
+				  }, 1000);
+				 });
+			}
+
+			async(3):
+			//Option 3 - Dont do anything but handle outside the function
+			//since async / await returns a promise, we can catch the whole function's error
+			async function doubleAndAdd(a, b) {
+				 a = await doubleAfter1Sec(a);
+				 b = await doubleAfter1Sec(b);
+				 return a + b;
+			}
+
+			//🚀Usage:
+			doubleAndAdd('one', 2)
+				.then(console.log)
+				.catch(console.log); // 👈👈🏼<------- use "catch"
+
+			function doubleAfter1Sec(param) {
+				 return new Promise((resolve, reject) => {
+				  setTimeout(function() {
+				   let val = param * 2;
+				   isNaN(val) ? reject(NaN) : resolve(val);
+				  }, 1000);
+			});
+}
+HOW TO GIT
+
+	echo "# Black-Mirror-episode-selecter" >> README.md
+	git init
+	git add README.md
+	git commit -m "first commit"
+	git remote add origin https://github.com/mirkan1/Black-Mirror-episode-selecter.git
+	git push -u origin master
+
+	pip3 install -r requirements.txt
+
+
+export DJANGO_SETTINGS_MODULE=mac.settings.staging
+
+##############################################################################################################################
+
+TO MAKE PYTHON FILES WORK WITHOUT FILES
+pyinstaller -w (file_name)
+
+TO MAKE PYTHON FILES WORK WITHOUT FILES AND WITH SINGLE FILE
+pyinstaller -F (file_name)
+
+MAKE YOUR FILE WITH ICON (MUST BE .ICO FILE)
+pyinstaller -i (icon_file) (file_name)
+
+ALL IN ONE
+pyinstaller -w -F -i (icon_file) (file_name)
+
+course seysi
+humble-bundle-pythonic-6046839a-7bbc-4741
+
+###############################################################################################################################
+HIDDEN WIKI
+http://zqktlwi4fecvo6ri.onion/wiki/Main_Page
+
+AHMIA
+http://msydqstlz2kzerdg.onion/
+
+0days - Hack forum
+http://mvfjfugdwgc5uwho.onion/
+
+FOR SINA - teen
+http://22222227e2c2g2ie.onion/index.html
+
+Digital Gangster
+http://digigang3lbqpfig.onion/
+
+STUFF ABOUT HACK
+http://torlinksd6pdnihy.onion/#hacking
+
+################################################################################################################################
+DJANGO ON WINDOWS
+
+To create a virtual venv: 						python -m venv myvenv
+To work virtual venv : 							venv\Scripts\activate.bat 
+#To work virtual venv ON-Linux:					source myenv\bin\activate 
+To stop virtual venv: 							deactivate
+## To create new project: 						django-admin.exe startproject mysite .
+## To create new app:							python manage.py startapp blog
+To make migrations from your new apps: 			python manage.py makemigrations 
+
+websites like Pythonanywhere doesnt load staticfiles automaticly: You need to type "python manage.py collectstatic" to make them upload
+
+raq - anadolu123
+
+Set DJANGO_SETTINGS_MODULE=mac.settings.staging
+################################################################################################################################
+React-debug problem
+Go to http://localhost:8081/debugger-ui/ . Then stop remote js debugging and run your react native app again. Finally debug js remotely. Has worked for me.
+################################################################################################################################
+KYK
+Eray3436
+21632139692
+
+http://api.tahmin.io/v1/matches/?format=json
+
+to install babel:
+$ npm install -g babel-cli
+$ npm install --save-dev babel-cli babel-preset-es2015 babel-preset-stage-0\
+$ npm add @babel/runtime
+$ npm add lodash react-redux redux redux-thunk
+
+
+npm install --save firebase@4.8.0
+npm install --save react-native-router-flux
+
+TO RUN (import fs from 'fs';) like modules -- Ya da (var fs = require('fs'))'i kullan
+node --experimental-modules requesttry.mjs
+
+## Bir twitter botu yap; bu bot her saat basi dunyaynin degisik bir sehrinden saatin kac oldugunu soylesin
+
+--TDK--
+http://www.tdk.gov.tr/index.php?option=com_gts&kelime=kanal
+
+npm install --save react-native-elements
+
+CV document link coding: https://docs.google.com/document/d/1lZRRUNLY4ZYk3ZqJ7nNZfGSDLYqr4shUveA5OQ0dTEg/edit?usp=sharing
+
+react-native requirements
+	npm install --save redux redux-thunk axios react-redux
+	
+how to activate eslint
+	eslint --init
+
+LOL HESAP:
+	osmansaglam
+	loca6hesap

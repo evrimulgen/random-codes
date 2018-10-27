@@ -1,0 +1,236 @@
+/***** RESET *****/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    /*font-size: 100%;
+    vertical-align: baseline;*/
+    
+}
+html, body {height:100%;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;} /* tables still need 'cellspacing="0"' in the markup */
+textarea {overflow:auto;}
+/***** RESET *****/
+
+ @font-face { font-family: DINpro; src: url('DINPro-Regular_13937.ttf'); } 
+ @font-face { font-family: DINpro; font-weight: bold; src: url('DINPro-Regular_13937.ttf');}
+
+html{
+	/*background: #201F1D;*/
+	background: #BBC4CD;
+	/*background: #D0403B;*/
+	font-family: "DINpro";
+}
+
+.page-header{
+	overflow: hidden;
+	/*background-color: #fff;*/
+	position: fixed;
+	/*opacity: 0.5;
+    filter: alpha(opacity=50);*/
+	top: 0;
+	width: 100%;
+	height: 150px;
+}
+
+.page-header a {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 50px 25px 0 0;
+    text-decoration: none;
+    color: #fff; text-decoration: none; font: bold 25px DINpro;
+    margin: 0 5px 0 20px;
+}
+
+
+
+.page-header a:hover {
+    color: #fff; 
+    text-decoration: underline; 
+    font: bold 25px DINpro;
+}
+
+.page-inside {
+	height: 60px;
+	font-size: 20px;
+	width: 250px;
+	float: left;
+	margin: 0 0 0 0;
+	/*background-color: #fff;*/
+}
+
+.page-inside h1{
+	
+}
+
+.logo{
+	background-image: url("images/samed.jpg"); /*INSERT LOGO URL HERE*/
+    background-repeat: repeat;
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin: 50px 0 50px 50px;
+	background-color: #000;
+}
+
+.logo a{
+	width: 75px;
+	height: 50px;
+}
+
+.menu{
+	padding-top: 10px
+}
+
+
+.first_block{
+	background-image: url("images/color.jpg"); /*INSERT BACKGROUND IMAGE URL HERE /// COLOR HERE*/
+    background-repeat: repeat;
+    background-size: 100px 100px;
+	width: 100%;
+	height: 600px;
+	-webkit-text-stroke: 1px #000;
+	float: left;
+	margin: 0 0 50px 0;
+}
+
+.intro{								/*IF YOU WANT TO ADD TEXT IN FIRST BLOCK*/
+	height: 100px;
+	width: 100px;
+	margin: 125px 245px;
+}
+
+
+.all{
+	float: left;
+	margin: 10px 0;
+	width: auto;
+	height: auto;
+}
+
+
+.write{
+	/*padding: 10px 500px;*/
+	margin: 0 0 50px 100px;
+	height: 1000px;
+	width: 40%;
+	float: left;
+	/*background: #fff;*/
+}
+
+.write p{
+	/*text-align: center; */
+	font: bold 35px DINpro; /*TO CHANGE PARAGRAPH'S THINGS*/
+	color: #fff;
+}
+
+.write h2{
+	/*text-align: center; */
+	font: bold 40px DINpro; /*TO CHANGE PARAGRAPH'S THINGS*/
+	color: #fff;
+}
+
+.write h1{
+	font: bold 50px DINpro;
+	color: #fff;
+	/*color: #54576A;*/
+	text-align: center; 
+}
+
+.write2{
+	margin: 0 0 50px 200px;
+	width: 40%;
+	height: 1000px;
+	float: left;
+
+}
+
+.tlg{
+	margin: auto;
+	width: 300px;
+	height: 120px;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.icon{
+	width: 100px;
+	height: 100px;
+	float: left;
+	background-image: url("images/telegram.png");
+	background-size: 100px 100px;
+}
+
+.icon a{
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+
+
+.join{
+	padding: 25px 0;
+	width: 200px;
+	height: 50px;
+	float: left;
+	color: #fff;	
+}
+
+.join a{
+	font: 25px DINpro;
+	color: #fff;
+	text-decoration: none;
+}
+
+.join a:hover{
+	font: 26px DINpro;
+	color: #fff;
+	text-decoration: underline;
+}
+
+
+.contact {
+	width: 150px;
+	height: 30px;
+	margin: 0 0 0 10px;
+	border: 2px solid #fff;
+	padding: 20px;
+	border-radius: 5px;
+	background: #4da6ff;
+	text-align: center;
+	float: left;
+}
+
+.contact h1{
+	text-align: center; 
+	font: bold 25px DINpro; 
+	padding: 0 0 5px 0; 
+	color: #fff; 
+	text-decoration: underline;
+}
+
+.contact h1:hover{
+	color: #fff;
+	text-decoration: underline;
+	font: bold 26px DINpro;
+}
+
+/*.abc{
+	opacity: 0.5;
+    filter: alpha(opacity=50);
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #333;
+    margin-left: 500px;
+    top: 0; /* Position the navbar at the top of the page
+}*/
+
+
