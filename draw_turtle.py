@@ -177,11 +177,11 @@ color = ["blue", "red", "orange", "yellow", "green", "pink", "purple"]
 def tr():
     import random
     window = turtle.Screen()
-    window.bgcolor("black")
+    window.bgcolor("white")
 
     star = turtle.Turtle()
     star.speed(100)
-    star.color('pink')
+    star.color('blue')
     star.shape("turtle")
     #star.right(45)
     for i in range(2000):
@@ -209,11 +209,10 @@ def tr():
 if __name__ == "__main__":
     #race()
     #shape()
-    #while True:
-    #draw_rectangle()
-    #draw_square()
+    while True:
+        #draw_rectangle()
+        #draw_square()
         #draw_triangle()
-    #star()
+        star()
     #tr()
     #shape()
-
