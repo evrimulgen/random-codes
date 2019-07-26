@@ -1,7 +1,7 @@
 django==2.1
 psycopg2==2.7.4
 Pillow==5.0.0
-djangorestframework==3.8.2
+djangorestframework==3.9.1
 django-cors-headers==2.2.0
 django-extra-fields==1.0.0
 django-storages==1.6.6
