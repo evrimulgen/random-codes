@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+function setVariables(){
+	if (navigator.appName == "Netscape") {
+		horz = ".left";
+		vert = ".top";
+		docStyle = "document.";
+		styleDoc = "";
+		innerW = "window.innerWidth";
+		innerH = "window.innerHeight";
+		offsetX = "window.pageXOffset";
+		offsetY = "window.pageYOffset";
+		objectXY = "layers[0]";
+	}
+	else{
+		horz = "pixelLeft";
+		vert = "pixelTop";
+		docStyle = "";
+		styleDoc = ".style";
+		innerW = "document.body.clientWidth";
+		innerH = "document.body.clientHeight";
+		offsetX = "document.body.scrollLeft";
+		offsetY = "document.body.scrollTop";
+		objectXY = "object1";
+	}
+}
+
+function checkLocation() {
+	imgwidth = 77;
+	imgheight = 70;
+
+	var availableX = eval(innerW)
+	var availableY = eval(innerH)
+
+	var currentX = eval(offsetX)
+	var currentY = eval(offsetY)
+
+	xmax = availableX - (imgwidth + 20) + currentX
+	ymax = availableY - (imgheight + 20) + currentY
+}
+var x = -100;
+var y = 50;
+var a = 5;
+var b = 5;
+
+function startMoveR() {
+	checkLocation();
+	x += a;
+	y += b;
+	if (y>ymax) b-b*-1
+	if (y<10) b=b*-1
+	evalMove();
+	if (x<xmax + 20) setTimeout("startMoveR()", 100);
+	else setTimeout("startMoveL()", 100);
+}
+
+function startMoveL() {
+	checkLocation();
+	x -= a;
+	y += b;
+	if (y>ymax - 15) b-b*-1
+	if (y<10) b=b*-1
+	evalMove();
+	if (x>0) setTimeout("startMoveL()", 100);
+	else setTimeout("startMoveR()", 100);
+}
+
+function evalMove() {
+	eval(docStyle = objectXY + styleDoc + horz + "=" + x);
+	eval(docStyle = objectXY + styleDoc + vert + "=" + y);
+}
+</script>
+
+<body bgcolor="#690096" text="silver" alink="#902090" link="#867346" vlink="#867346" onload="setVariables(), startMoveR()">
+	<p>
+<div id="object1" style="position: absolute; visibility: show;left: -100px;top: 50px;z-index: 2">
+	<table>
+		<td>
+			<img src="/home/mirkan/Pictures/adventure-souls.jpg" WIDTH="110" HEIGHT="110" onclick="startMoveR()">
+		</td>
+	</table>
+</div>
+
+</body>
+</html>
